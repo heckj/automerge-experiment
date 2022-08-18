@@ -10,19 +10,22 @@ let package = Package(
             targets: ["automerge-experiment"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/heckj/automergeC", from: "0.2.0")
+        .package(url: "https://github.com/heckj/automergeC", from: "0.2.0"),
+        
     ],
     targets: [
         .target(
             name: "automerge-experiment",
             dependencies: [
-                .product(name: "automergeC", package: "automergeC")
+                .product(name: "automergeC", package: "automergeC"),
+        
             ]),
         .testTarget(
             name: "automerge-experimentTests",
             dependencies: [
                 "automerge-experiment",
-                .product(name: "automergeC", package: "automergeC")
+                .product(name: "automergeC", package: "automergeC"),
+        
             ]),
     ]
 )

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "automergec",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/heckj/automergeC",
+      "state" : {
+        "revision" : "4be37c1eb38ddf0efebfc0875c36f33fbe403aec",
+        "version" : "0.2.1"
+      }
+    }
+  ],
+  "version" : 2
+}
